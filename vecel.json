@@ -1,15 +1,1 @@
-{
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "dist/index.js"
-    }
-  ],
-  "public": false
-}
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/src" }] }
